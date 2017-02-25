@@ -1,0 +1,43 @@
+New log file opened at Fri Feb 24 17:14:24 EET 2017 by 10912@DESKTOP-CKM8KJV
+Taking next connection to: 49944
+New client attempting to connect on port: 49945-49944
+  Address = /192.168.56.1:49944
+This client on port 49945 has uuid 3a135a5a-6741-49c2-b43a-131d36b55a56 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-3a135a5a-6741-49c2-b43a-131d36b55a56
+Taking next connection to: 49944
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49944
+New client attempting to connect on port: 49979-49944
+  Address = /192.168.56.1:49944
+Handshake exception on socket: 49979
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49944
+New client attempting to connect on port: 49980-49944
+  Address = /192.168.56.1:49944
+This client on port 49980 has uuid 7eaf5ba7-3ae7-4ade-ad96-3b7725d65d4e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-3a135a5a-6741-49c2-b43a-131d36b55a56, play-fork-run-7eaf5ba7-3ae7-4ade-ad96-3b7725d65d4e
+Taking next connection to: 49944
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49944
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 10912@DESKTOP-CKM8KJV logs at Fri Feb 24 17:25:16 EET 2017, goodbye.
